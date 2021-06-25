@@ -16,7 +16,6 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: optionaldomain.com
+          CUSTOM_DOMAIN: docs.dresspay.org
           CONFIG_FILE: mkdocs.yml
           EXTRA_PACKAGES: build-base
-          GITHUB_DOMAIN: docs.dresspay.org
