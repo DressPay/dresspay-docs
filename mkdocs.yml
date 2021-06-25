@@ -1,0 +1,54 @@
+site_name: DressPay Docs
+site_url: https://docs.dresspay.org/
+site_description: Documentations of DressPay. A payment gateway for dress photos.
+repo_name: DressPay/dresspay-docs
+repo_url: https://github.com/DressPay/dresspay-docs
+copyright: Copyright &copy; <script>document.write(new Date.getFullYear())</script> DressPay &trade;
+nav:
+  - Home: index.md
+  - "API Docs":
+      - "About": api/index.md
+      - "General":
+          - "System Information": api/general/sysinfo.md
+          - "Gallery": api/general/gallery.md
+      - "Payments":
+          - "Gateway Redirection": api/payment/gateway.md
+          - "Payment Callback": api/payment/callback.md
+  - "Integrations":
+      - "BoxBilling Plugin": integrations/boxbilling.md
+  - "Workflow":
+      - "About": workflow/index.md
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+markdown_extensions:
+  - meta
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+plugins:
+  - search
