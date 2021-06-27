@@ -10,14 +10,22 @@ nav:
       - "About": api/index.md
       - "General":
           - "System Information": api/general/sysinfo.md
-          - "Gallery": api/general/gallery.md
+          - "Get Gallery": api/general/gallery.md
+          - "Get Photo": api/general/photo.md
       - "Payments":
           - "Gateway Redirection": api/payment/gateway.md
           - "Payment Callback": api/payment/callback.md
+      - "Merchants":
+          - "Get Merchant Information": api/merchant/getinfo.md
+      - "Internal":
+          - "Demo":
+              - "Sign a Request": api/internal/demo/getsign.md
   - "Integrations":
       - "BoxBilling Plugin": integrations/boxbilling.md
   - "Workflow":
       - "About": workflow/index.md
+  - "Deployment":
+      - "About": deployment/index.md
 theme:
   name: material
   custom_dir: overrides

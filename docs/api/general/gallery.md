@@ -10,21 +10,19 @@ Get 100 photos of latest finished transactions.
 
 `GET`
 
-## Parameter
+## Request Parameters
 
 `No parameter for this API.`
 
-## Response
+## Request Examples
+
+`GET /gallery`
+
+## Response Examples
 
 ```json
 {
   "error": false,
-  "data": [
-    {
-      "photo": "xxxxxx-xxxxxx-xxxxxx", // unique id of the photo
-      "price": 2.33 //price of transaction
-    },
-    ...
-  ]
+  "data": [{ "photo": "452bdc15-4936-42ec-b647-6ed58e5ad209", "price": "120" }]
 }
 ```
